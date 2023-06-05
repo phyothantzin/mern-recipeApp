@@ -3,7 +3,7 @@ import { like, dislike } from '../controllers/likeController.js'
 import Likes from '../models/likeModel.js'
 
 const router = express.Router()
-
+s
 // User Auth Routes
 router.post('/', like)
 router.post('/remove', dislike)
