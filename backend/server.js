@@ -25,7 +25,7 @@ app.use('/api/recipes', recipesRoutes)
 app.use('/api/like', likeRoutes)
 
 if (process.env.NODE_ENV === 'production') {
-  // const __dirname = path.resolve()
+  const __dirname = path.resolve()
   app.use(express.static(path.join(__dirname, 'frontend/dist')))
 
   app.get('*', (req, res) =>
