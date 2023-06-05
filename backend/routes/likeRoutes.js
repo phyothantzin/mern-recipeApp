@@ -1,6 +1,6 @@
 import express from 'express'
 import { like, dislike } from '../controllers/likeController.js'
-import Likes from '../models/likeModel.js'
+import Likes from '../models/LikeModel.js'
 
 const router = express.Router()
 
