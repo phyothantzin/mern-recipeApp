@@ -22,6 +22,7 @@ const Recipe = ({
   showUnsave,
   showDelete,
 }) => {
+  const PF = 'http://localhost:5000/images/'
   const [show, setShow] = useState(false)
 
   const handleClose = () => setShow(false)
@@ -192,7 +193,8 @@ const Recipe = ({
         }}
         className="image-fluid mb-2"
         style={{ cursor: 'pointer' }}
-        src={image}
+        // src={image}
+        src={PF + recipe.image}
         alt=""
       />
 
